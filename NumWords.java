@@ -22,6 +22,6 @@ public class NumWords {
             }
             number = number / 10;
         }
-        System.out.println(hundreds + " hundreds, " + tens + " tens, " + units + " units");
+        System.out.println(hundreds + " hundreds, " + tens + " tens, " + units + " ones");
 	}
 }
