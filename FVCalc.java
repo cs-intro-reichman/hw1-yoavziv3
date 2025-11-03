@@ -22,6 +22,6 @@ public class FVCalc {
             saveRateN = saveRateN * saveRate;
         }
         double futureValue = currentValue * saveRateN;
-        System.out.println("after " + n + " years, " + currentValue + "$ saved at " + rate + "% will yield " + (int) futureValue+"$");
+        System.out.println("After " + n + " years, " + currentValue + "$ saved at " + rate + "% will yield " + (int) futureValue+"$");
 	}
 }
