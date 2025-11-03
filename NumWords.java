@@ -6,7 +6,24 @@ public class NumWords {
         int tens =0;
         int hundreds =0;
         int number = Integer.parseInt(args[0]);
-        while (number > 0)
+        boolean isDone = false;
+        
+        if(number > 0 && number <= 99 && isDone == false)
+        {
+            units = number % 10;
+            tens = number / 10;
+            isDone = true;
+        }
+
+        if (number < 10 && isDone == false) 
+        {
+            units = number;
+            isDone = true;
+        }
+        
+        
+        
+        while (number > 0 && isDone == false)
         {
             if(number > 99 && number <= 999)
             {
@@ -22,6 +39,6 @@ public class NumWords {
             }
             number = number / 10;
         }
-        System.out.println(hundreds + " hundreds, " + tens + " tens, " + units + " ones");
+        System.out.println(hundreds + " hundreds, " + tens + " tens, " + units + " ones.");
 	}
 }
