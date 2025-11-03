@@ -21,23 +21,28 @@ public class TimeFormat {
             newMin="0"+Integer.toString(mins);
             System.out.println(hours + ":" + newMin + " PM");
         }
-        if (hours > 12 && mins < 10)
+        if (hours > 9 && hours != 12 && mins < 10)
         {
             newMin="0"+Integer.toString(mins);
             System.out.println(hours-12 + ":" + newMin + " PM");
         }
-
 
         if(hours < 10 && mins >= 10)
         {
             newHour="0"+Integer.toString(hours);
             System.out.println(newHour + ":" + mins + " AM");
         }
-        if (hours < 10 && mins < 10)
+
+        if(hours > 9 && hours < 12 && mins > 9)
+        {
+            System.out.println(hours + ":" + mins + " AM");
+
+        }
+
+        if (hours > 9 && hours < 12 && mins < 10)
         {
             newMin="0"+Integer.toString(mins);
-            newHour="0"+Integer.toString(hours);
-            System.out.println(newHour + ":" + newMin + " AM");
+            System.out.println(hours + ":" + newMin + " AM");
         }
 	}
 }
