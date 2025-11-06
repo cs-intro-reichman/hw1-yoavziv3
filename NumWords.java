@@ -22,7 +22,6 @@ public class NumWords {
         }
         
         
-        
         while (number > 0 && isDone == false)
         {
             if(number > 99 && number <= 999)

@@ -2,7 +2,7 @@
 public class FVCalc {
 	public static void main(String[] args){
 		int currentValue = Integer.parseInt(args[0]); //amount of money
-        double rate = Integer.parseInt(args[1]); //the rate
+        double rate = Double.parseDouble(args[1]); //the rate
         int n = Integer.parseInt(args[2]); //number of years
 
 		double saveRate = (double) rate/100 + 1;
